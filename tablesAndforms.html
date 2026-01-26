@@ -1,10 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<p>The form should not submit unless the user provides a value for name, phone, email, pizza size, and sauce type.
-In addition to the "Select Size" option, the possible pizza sizes are Medium, Large, and XLarge
-There should be at least 6 checkboxes for pizza toppings.
-For the Favorite Video Game table, at least one vertical and at least one horizontal merged cell should be present.
-At least 4 games should be listed.  Semantic HTML must be used.
-The W3C Validator tool must not find any error with the markup.  A warning for the Table Border attribute is acceptable.
-Students will push their code to their GitHub IO page and submit the URL to this assignment's solution.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablesAndforms</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>Pizza Ordering Form</h1>
+      <h2>Contact Information</h2>
+      <form action="/action_page.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <h2>Select Pizza Size</h2>
+        <label for="Pizza_Size">Pizza Size:</label>
+        <select id="Pizza_Size" name="Pizza_Size" required>
+          <option value="">--Select Size--</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+          <option value="XLarge">XLarge</option>
+        </select>
+        <h2>Select Sauce</h2>
+
+        <input type="radio" id="Marinara" name="sauce" value="Marinara" required>
+        <label for="Marinara">Marinara</label><br>
+        <input type="radio" id="Ranch" name="sauce" value="Ranch">
+        <label for="Ranch">Ranch</label><br>
+        <input type="radio" id="NoSauce" name="sauce" value="NoSauce">
+        <label for="NoSauce">No Sauce</label><br>
+ 
+        <h2>Select Toppings</h2>
+
+        <input
+          type="checkbox"
+          id="pepperoni"
+          name="toppings"
+          value="pepperoni"
+        >
+        <label for="pepperoni"> Pepperoni</label>
+        <input type="checkbox" id="sausage" name="toppings" value="sausage">
+        <label for="sausage"> Sausage</label><br>
+        <input
+          type="checkbox"
+          id="mushrooms"
+          name="toppings"
+          value="mushrooms"
+        >
+        <label for="mushrooms"> Mushrooms</label>
+        <input
+          type="checkbox"
+          id="pineapple"
+          name="toppings"
+          value="pineapple"
+        >
+        <label for="pineapple"> Pineapple</label><br>
+        <input type="checkbox" id="peppers" name="toppings" value="peppers">
+        <label for="peppers"> Peppers</label>
+        <input type="checkbox" id="olives" name="toppings" value="olives">
+        <label for="olives"> Olives</label><br>
+        <h2>Additional Instructions</h2>
+
+        <textarea rows="2" cols="20" placeholder="Add instructions"></textarea
+        ><br>
+
+        <input type="submit" value="Submit"><br><br>
+        
+      </form>
+      <p>List of My Favorite Games</p>
+      <table border="1">
+        <tr>
+          <th>Developer</th>
+          <th>Title</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Ubisoft</td>
+          <td>Assassin's Creed II</td>
+          <td>2009</td>
+        </tr>
+        <tr>
+          
+          <td>Assassin's Creed IV: Black Flag</td>
+          <td>2013</td>
+        </tr>
+        <tr>
+          <td>Mojang</td>
+          <td>Minecraft</td>
+          <td>2011</td>
+        </tr>
+        <tr>
+          <td>Naughty Dog</td>
+          <td>Uncharted 4: A Thief's End</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td colspan="3">Count = 4</td>
+        </tr>
+      </table>
+    </main>
+  </body>
 </html>
