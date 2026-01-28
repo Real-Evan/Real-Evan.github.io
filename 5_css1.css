@@ -1,0 +1,56 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+#paragraph2{
+    background-color: white;
+    border-color: green;
+    border-width: 3px;
+    border-style: solid;
+    padding:20px;
+    margin-right:300px;
+    margin-left: 25px;
+}
+
+.blue{
+    background-color: darkblue;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    padding:10px;
+}
+
+ol li{
+    list-style-type: decimal-leading-zero;
+}
+
+ol li a{
+    color:darkblue;
+}
+
+p a{
+    color: darkred;
+}
+
+table {
+  border-collapse: collapse;
+
+  background-color: white
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: lightgray; 
+  font-weight: bold;
+  text-align: center;
+}
