@@ -19,6 +19,17 @@ p:hover, ul:hover {
 }
 
 /* Mobile Layout (412px) - Single Column Grid */
+/* Ensure proper mobile rendering */
+@media (max-width: 412px) {
+  .btn {
+    width: calc(100% - 20px);
+    max-width: 300px;
+  }
+  
+  header p {
+    font-size: 11px;
+  }
+}
 .grid-container {
   display: grid;
   grid-template-areas:
