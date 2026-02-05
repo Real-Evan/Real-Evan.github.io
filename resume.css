@@ -6,6 +6,30 @@ header {
   text-align: center;
   padding: 10px;
 }
-p:hover, ul:hover {
+
+p:hover,ul:hover {
   background-color: lightgray;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;   /* centers buttons */
+    width: 100%;               /* MUST be full width */
+    margin: 0 auto;            /* safety */
+}
+
+.btn {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+.btn:hover {
+  background-color: navy;
 }
