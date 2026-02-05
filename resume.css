@@ -1,21 +1,113 @@
-/*Your CSS must use Responsive CSS; in other words, it must use an appropriate layout for Mobile Devices, and it must use an appropriate (and different) layout for a desktop/laptop.
-Your responsive design will be checked against the following criteria:
-Mobile Device: width: 412px
-Desktop/Laptop: width: 1920px*/
-header {
-  text-align: center;
-  padding: 10px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-p:hover,ul:hover {
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Papyrus', Arial, sans-serif;
+}
+
+p:hover, ul:hover {
   background-color: lightgray;
 }
 
+/* Mobile Layout (412px) - Single Column Grid */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'objective'
+    'work'
+    'education'
+    'skills'
+    'buttons'
+    'footer';
+  gap: 15px;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+#Professional_Objective_Statement {
+  grid-area: objective;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#Work_Experience {
+  grid-area: work;
+  padding: 15px;
+}
+
+#education {
+  grid-area: education;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#skills {
+  grid-area: skills;
+  padding: 15px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin: 8px 0 12px 0;
+  border: none;
+  border-top: 2px solid #333;
+}
+
+ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
 .btn-row {
+   grid-area: buttons;
     display: flex;
-    justify-content: center;   /* centers buttons */
-    width: 100%;               /* MUST be full width */
-    margin: 0 auto;            /* safety */
+    justify-content: center;   
+    width: 100%;               
+    margin: 0 auto;            
 }
 
 .btn {
@@ -32,4 +124,83 @@ p:hover,ul:hover {
 
 .btn:hover {
   background-color: navy;
+}
+
+/* Desktop Layout (1920px) - Multi-column Grid */
+@media (min-width: 1920px) {
+  body {
+    background-color: #f0f0f0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header'
+      'objective objective objective'
+      'work work education'
+      'work work skills'
+      'buttons buttons buttons'
+      'footer footer footer';
+    gap: 25px;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  header {
+    padding: 40px;
+  }
+  
+  header h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+  }
+  
+  header p {
+    font-size: 18px;
+  }
+  
+  #Professional_Objective_Statement {
+    padding: 30px;
+  }
+  
+  #Work_Experience {
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  #education {
+    padding: 30px;
+  }
+  
+  #skills {
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  p, li {
+    font-size: 18px;
+  }
+  
+  hr {
+    margin: 12px 0 20px 0;
+  }
+  
+  footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 15px;
+}
 }
