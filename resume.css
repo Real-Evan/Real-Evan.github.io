@@ -1,0 +1,8 @@
+/*Your CSS must use Responsive CSS; in other words, it must use an appropriate layout for Mobile Devices, and it must use an appropriate (and different) layout for a desktop/laptop.
+Your responsive design will be checked against the following criteria:
+Mobile Device: width: 412px
+Desktop/Laptop: width: 1920px*/
+header{
+    text-align: center;
+    padding: 10px;
+}
