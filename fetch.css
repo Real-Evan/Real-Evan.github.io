@@ -1,31 +1,40 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #8fb4c0; /* blue background */
-    font-family: serif;
+    background-color: white; 
+    font-family: 'Press Start 2P', cursive;
+    color:white;
 }
 
 .container {
     width: 600px;
     margin: 50px auto;
     padding: 40px 20px;
-    background-color: #dcdcdc;
-    border: 6px solid #d89c13; /* gold border */
+    background-color: red;
+    border: 6px solid lightgray; 
     border-radius: 40px;
     text-align: center;
 }
 
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-section button{
+    font-family: 'Press Start 2P', cursive;
+}
+
 .search-section label {
-    font-size: 20px;
+    margin-bottom: 6px; 
 }
 
-.search-section input {
-    width: 250px;
-    padding: 5px;
-}
-
-.search-section button {
-    padding: 5px 10px;
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 6px; 
 }
 
 .image-section {
@@ -52,6 +61,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-family: 'Press Start 2P', cursive;
+
 }
 
 select {
@@ -62,4 +73,6 @@ select {
 .button-section button {
     padding: 6px 15px;
     font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+
 }

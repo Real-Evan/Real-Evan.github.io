@@ -1,47 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Pokémon Team Builder</title>
-    <link rel="stylesheet" href="fetch.css">
+    <link rel="stylesheet" href="fetch.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="fetch.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-section">
+        <label>Name or ID</label>
 
-<div class="container">
+        <div class="search-row">
+          <input type="text" id="pokemonInput" />
+          <button onclick="getPokemon()">Find</button>
+        </div>
+      </div>
 
-    <div class="search-section">
-        <label>Name or ID</label><br>
-        <input type="text" id="pokemonInput">
-        <button onclick="getPokemon()">Find</button>
-    </div>
+      <div class="image-section">
+        <img id="pokemonImage" src="" alt="" />
+      </div>
 
-    <div class="image-section">
-        <img id="pokemonImage" src="" alt="">
-    </div>
-
-    <div class="audio-section">
+      <div class="audio-section">
         <audio id="pokemonCry" controls></audio>
-    </div>
+      </div>
 
-    <div class="dropdown-section">
+      <div class="dropdown-section">
         <select id="move1"></select>
         <select id="move2"></select>
         <select id="move3"></select>
         <select id="move4"></select>
-    </div>
+      </div>
 
-    <div class="button-section">
+      <div class="button-section">
         <button onclick="addToTeam()">Add to Team</button>
-    </div>
+      </div>
 
-    <div class="team-section">
+      <div class="team-section">
         <h3>Your Team</h3>
         <div id="teamDisplay"></div>
+      </div>
     </div>
 
-</div>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

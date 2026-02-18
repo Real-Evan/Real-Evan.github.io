@@ -22,16 +22,13 @@ function getPokemon() {
 
 function updatePage(data) {
 
-    // Image
     const image = document.getElementById("pokemonImage");
     image.src = data.sprites.front_default;
     image.alt = data.name;
 
-    // Sound (cry)
     const cry = document.getElementById("pokemonCry");
     cry.src = `https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${data.id}.ogg`;
 
-    // Moves
     const moveSelects = [
         document.getElementById("move1"),
         document.getElementById("move2"),
