@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8fb4c0; /* blue background */
+    font-family: serif;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    background-color: #dcdcdc;
+    border: 6px solid #d89c13; /* gold border */
+    border-radius: 40px;
+    text-align: center;
+}
+
+.search-section label {
+    font-size: 20px;
+}
+
+.search-section input {
+    width: 250px;
+    padding: 5px;
+}
+
+.search-section button {
+    padding: 5px 10px;
+}
+
+.image-section {
+    margin: 20px 0;
+}
+
+.image-section img {
+    width: 120px;
+    height: auto;
+}
+
+.audio-section {
+    margin: 20px 0;
+}
+
+.dropdown-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+
+.left-dropdowns,
+.right-dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select {
+    width: 180px;
+    padding: 5px;
+}
+
+.button-section button {
+    padding: 6px 15px;
+    font-size: 14px;
+}
